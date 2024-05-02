@@ -31,7 +31,6 @@ export default function App() {
     axios
       .get("https://weather.tsukumijima.net/api/forecast?city=270000")
       .then((res) => {
-        console.log(res.data);
         setWeatherData(res.data);
       });
   }, []);
