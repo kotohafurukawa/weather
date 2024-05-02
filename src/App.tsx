@@ -33,12 +33,6 @@ export default function App() {
       .then((res) => {
         console.log(res.data);
         setWeatherData(res.data);
-      })
-      .catch((error) => {
-        setWeatherData(error);
-      })
-      .finally(() => {
-        console.log("finally");
       });
   }, []);
   return (
